@@ -1,0 +1,45 @@
+{
+  "parent": "bingo_ourselves:husbandry/obtain_sniffer_egg",
+  "display": {
+    "icon": {
+      "id": "minecraft:torchflower_seeds"
+    },
+    "title": {
+      "translate": "bo.adv.husbandry.feed_snifflet.title",
+      "fallback": "Little Sniffs"
+    },
+    "description": {
+      "translate": "bo.adv.husbandry.feed_snifflet.description",
+      "fallback": "Feed a Snifflet"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "feed_snifflet": {
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:sniffer",
+            "minecraft:flags": {
+              "is_baby": true
+            }
+          }
+        },
+        "item": {
+          "items": "#minecraft:sniffer_food"
+        }
+      },
+      "trigger": "minecraft:player_interacted_with_entity"
+    }
+  },
+  "requirements": [
+    [
+      "feed_snifflet"
+    ]
+  ]
+}

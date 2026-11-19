@@ -1,0 +1,51 @@
+{
+  "parent": "bingo_ourselves:nether/brew_potion",
+  "display": {
+    "icon": {
+      "id": "minecraft:milk_bucket"
+    },
+    "title": {
+      "translate": "bo.adv.nether.all_potions.title",
+      "fallback": "A Furious Cocktail"
+    },
+    "description": {
+      "translate": "bo.adv.nether.all_potions.description",
+      "fallback": "Have every potion effect applied at the same time"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "all_effects": {
+      "conditions": {
+        "effects": {
+          "minecraft:fire_resistance": {},
+          "minecraft:infested": {},
+          "minecraft:invisibility": {},
+          "minecraft:jump_boost": {},
+          "minecraft:night_vision": {},
+          "minecraft:oozing": {},
+          "minecraft:poison": {},
+          "minecraft:regeneration": {},
+          "minecraft:resistance": {},
+          "minecraft:slow_falling": {},
+          "minecraft:slowness": {},
+          "minecraft:speed": {},
+          "minecraft:strength": {},
+          "minecraft:water_breathing": {},
+          "minecraft:weakness": {},
+          "minecraft:weaving": {},
+          "minecraft:wind_charged": {}
+        }
+      },
+      "trigger": "minecraft:effects_changed"
+    }
+  },
+  "requirements": [
+    [
+      "all_effects"
+    ]
+  ]
+}

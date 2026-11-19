@@ -1,0 +1,81 @@
+plugins {
+	id 'net.fabricmc.fabric-loom' version '1.16.3'
+	id 'maven-publish'
+}
+
+version = project.mod_version
+group = project.maven_group
+base { archivesName = project.archives_base_name }
+
+repositories {
+	mavenCentral()
+	maven {
+		name = 'Modrinth'
+		url = 'https://api.modrinth.com/maven'
+		content { includeGroup 'maven.modrinth' }
+	}
+	maven {
+		name = 'Xander Maven'
+		url = 'https://maven.isxander.dev/releases'
+		content { includeGroup 'dev.isxander.yacl' }
+	}
+	maven {
+		name = 'TerraformersMC'
+		url = 'https://maven.terraformersmc.com/releases/'
+		content { includeGroup 'com.terraformersmc' }
+	}
+	maven {
+		name = "Jared's maven"
+		url = 'https://maven.blamejared.com/'
+		content { includeGroup 'mezz.jei' }
+	}
+}
+
+dependencies {
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+	implementation "net.fabricmc:fabric-loader:${project.loader_version}"
+
+	// Fabric API (library)
+	implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
+	// Config UI library
+	implementation "maven.modrinth:yacl:3.9.7+26.3-fabric"
+
+	// Optional client integrations (all library/utility mods)
+	compileOnly "maven.modrinth:modmenu:21.0.1"
+	compileOnly "maven.modrinth:jei:31.17.0.113"
+}
+
+processResources {
+	inputs.property "version", project.version
+	inputs.property "minecraft_version", project.minecraft_version
+	inputs.property "loader_version", project.loader_version
+	filteringCharset "UTF-8"
+	filesMatching("fabric.mod.json") {
+		expand "version": project.version,
+				"minecraft_version": project.minecraft_version,
+				"loader_version": project.loader_version
+	}
+}
+
+def targetJavaVersion = 25
+tasks.withType(JavaCompile).configureEach {
+	it.options.encoding = "UTF-8"
+	if (targetJavaVersion >= 10 || JavaVersion.current().isJava10Compatible()) {
+		it.options.release = targetJavaVersion
+	}
+}
+
+java {
+	def javaVersion = JavaVersion.toVersion(targetJavaVersion)
+	if (JavaVersion.current() < javaVersion) {
+		toolchain.languageVersion = JavaLanguageVersion.of(targetJavaVersion)
+	}
+	withSourcesJar()
+}
+
+jar {
+	from("LICENSE") {
+		rename { "${it}_${project.base.archivesName.get()}" }
+	}
+}

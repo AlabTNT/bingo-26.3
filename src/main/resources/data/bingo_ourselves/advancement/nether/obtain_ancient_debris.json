@@ -1,0 +1,37 @@
+{
+  "parent": "bingo_ourselves:nether/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:ancient_debris"
+    },
+    "title": {
+      "translate": "bo.adv.nether.obtain_ancient_debris.title",
+      "fallback": "Hidden in the Depths"
+    },
+    "description": {
+      "translate": "bo.adv.nether.obtain_ancient_debris.description",
+      "fallback": "Obtain Ancient Debris"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "ancient_debris": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:ancient_debris"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "ancient_debris"
+    ]
+  ]
+}

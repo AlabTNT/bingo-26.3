@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.alabtnt.bingo.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "mixins": [
+    "ItemInstanceMixin",
+    "MinecraftServerAccessor",
+    "AbstractContainerMenuInvoker",
+    "InventoryMenuMixin",
+    "LivingEntityElytraMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "parent": "bingo_ourselves:adventure/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:water_bucket"
+    },
+    "title": {
+      "translate": "bo.adv.adventure.fall_from_world_height.title",
+      "fallback": "Caves & Cliffs"
+    },
+    "description": {
+      "translate": "bo.adv.adventure.fall_from_world_height.description",
+      "fallback": "Free fall from the top of the world (build limit) to the bottom of the world and survive"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "fall_from_world_height": {
+      "conditions": {
+        "distance": {
+          "y": {
+            "min": 379.0
+          }
+        },
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "position": {
+                "y": {
+                  "max": -59.0
+                }
+              }
+            }
+          }
+        },
+        "start_position": {
+          "position": {
+            "y": {
+              "min": 319.0
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:fall_from_height"
+    }
+  },
+  "requirements": [
+    [
+      "fall_from_world_height"
+    ]
+  ]
+}

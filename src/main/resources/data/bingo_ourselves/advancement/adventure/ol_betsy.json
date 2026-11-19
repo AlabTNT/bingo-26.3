@@ -1,0 +1,35 @@
+{
+  "parent": "bingo_ourselves:adventure/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:crossbow"
+    },
+    "title": {
+      "translate": "bo.adv.adventure.ol_betsy.title",
+      "fallback": "Ol' Betsy"
+    },
+    "description": {
+      "translate": "bo.adv.adventure.ol_betsy.description",
+      "fallback": "Shoot a Crossbow"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "shot_crossbow": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:crossbow"
+        }
+      },
+      "trigger": "minecraft:shot_crossbow"
+    }
+  },
+  "requirements": [
+    [
+      "shot_crossbow"
+    ]
+  ]
+}

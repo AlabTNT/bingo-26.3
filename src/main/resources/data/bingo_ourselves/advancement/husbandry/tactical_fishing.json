@@ -1,0 +1,62 @@
+{
+  "parent": "bingo_ourselves:husbandry/fishy_business",
+  "display": {
+    "icon": {
+      "id": "minecraft:pufferfish_bucket"
+    },
+    "title": {
+      "translate": "bo.adv.husbandry.tactical_fishing.title",
+      "fallback": "Tactical Fishing"
+    },
+    "description": {
+      "translate": "bo.adv.husbandry.tactical_fishing.description",
+      "fallback": "Catch a Fish... without a Fishing Rod!"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "cod_bucket": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:cod_bucket"
+        }
+      },
+      "trigger": "minecraft:filled_bucket"
+    },
+    "pufferfish_bucket": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:pufferfish_bucket"
+        }
+      },
+      "trigger": "minecraft:filled_bucket"
+    },
+    "salmon_bucket": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:salmon_bucket"
+        }
+      },
+      "trigger": "minecraft:filled_bucket"
+    },
+    "tropical_fish_bucket": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:tropical_fish_bucket"
+        }
+      },
+      "trigger": "minecraft:filled_bucket"
+    }
+  },
+  "requirements": [
+    [
+      "cod_bucket",
+      "tropical_fish_bucket",
+      "pufferfish_bucket",
+      "salmon_bucket"
+    ]
+  ]
+}

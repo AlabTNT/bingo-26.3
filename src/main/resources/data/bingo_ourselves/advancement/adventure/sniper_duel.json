@@ -1,0 +1,52 @@
+{
+  "parent": "bingo_ourselves:adventure/shoot_arrow",
+  "display": {
+    "icon": {
+      "id": "minecraft:arrow"
+    },
+    "title": {
+      "translate": "bo.adv.adventure.sniper_duel.title",
+      "fallback": "Sniper Duel"
+    },
+    "description": {
+      "translate": "bo.adv.adventure.sniper_duel.description",
+      "fallback": "Kill a Skeleton from at least 50 meters away"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "killed_skeleton": {
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:distance": {
+              "horizontal": {
+                "min": 50.0
+              }
+            },
+            "minecraft:entity_type": "minecraft:skeleton"
+          }
+        },
+        "killing_blow": {
+          "tags": [
+            {
+              "expected": true,
+              "id": "#minecraft:is_projectile"
+            }
+          ]
+        }
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "requirements": [
+    [
+      "killed_skeleton"
+    ]
+  ]
+}

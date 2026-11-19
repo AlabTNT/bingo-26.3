@@ -1,0 +1,35 @@
+{
+  "parent": "bingo_ourselves:adventure/kill_a_mob",
+  "display": {
+    "icon": {
+      "id": "minecraft:totem_of_undying"
+    },
+    "title": {
+      "translate": "bo.adv.adventure.totem_of_undying.title",
+      "fallback": "Postmortal"
+    },
+    "description": {
+      "translate": "bo.adv.adventure.totem_of_undying.description",
+      "fallback": "Use a Totem of Undying to cheat death"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "used_totem": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:totem_of_undying"
+        }
+      },
+      "trigger": "minecraft:used_totem"
+    }
+  },
+  "requirements": [
+    [
+      "used_totem"
+    ]
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "parent": "bingo_ourselves:husbandry/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:bee_nest"
+    },
+    "title": {
+      "translate": "bo.adv.husbandry.silk_touch_nest.title",
+      "fallback": "Total Beelocation"
+    },
+    "description": {
+      "translate": "bo.adv.husbandry.silk_touch_nest.description",
+      "fallback": "Move a Bee Nest or Beehive, with 3 Bees inside, using Silk Touch"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "silk_touch_nest": {
+      "conditions": {
+        "blocks": "minecraft:bee_nest",
+        "item": {
+          "predicates": {
+            "minecraft:enchantments": [
+              {
+                "enchantments": "minecraft:silk_touch",
+                "levels": {
+                  "min": 1
+                }
+              }
+            ]
+          }
+        },
+        "num_bees_inside": 3
+      },
+      "trigger": "minecraft:bee_nest_destroyed"
+    }
+  },
+  "requirements": [
+    [
+      "silk_touch_nest"
+    ]
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "parent": "bingo_ourselves:adventure/sleep_in_bed",
+  "display": {
+    "icon": {
+      "id": "minecraft:jukebox"
+    },
+    "title": {
+      "translate": "bo.adv.adventure.play_jukebox_in_meadows.title",
+      "fallback": "Sound of Music"
+    },
+    "description": {
+      "translate": "bo.adv.adventure.play_jukebox_in_meadows.description",
+      "fallback": "Make the Meadows come alive with the sound of music from a Jukebox"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "play_jukebox_in_meadows": {
+      "conditions": {
+        "location": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "biomes": "minecraft:meadow",
+                "block": {
+                  "blocks": "minecraft:jukebox"
+                }
+              }
+            },
+            {
+              "type": "minecraft:match_tool",
+              "predicate": {
+                "predicates": {
+                  "minecraft:jukebox_playable": {}
+                }
+              }
+            }
+          ]
+        }
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "requirements": [
+    [
+      "play_jukebox_in_meadows"
+    ]
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "parent": "bingo_ourselves:adventure/trade",
+  "display": {
+    "icon": {
+      "id": "minecraft:emerald"
+    },
+    "title": {
+      "translate": "bo.adv.adventure.trade_at_world_height.title",
+      "fallback": "Star Trader"
+    },
+    "description": {
+      "translate": "bo.adv.adventure.trade_at_world_height.description",
+      "fallback": "Trade with a Villager at the build height limit"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "trade_at_world_height": {
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:location": {
+              "position": {
+                "y": {
+                  "min": 319.0
+                }
+              }
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:villager_trade"
+    }
+  },
+  "requirements": [
+    [
+      "trade_at_world_height"
+    ]
+  ]
+}

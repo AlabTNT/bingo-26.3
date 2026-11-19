@@ -1,0 +1,41 @@
+{
+  "parent": "bingo_ourselves:adventure/throw_trident",
+  "display": {
+    "icon": {
+      "id": "minecraft:trident"
+    },
+    "title": {
+      "translate": "bo.adv.adventure.very_very_frightening.title",
+      "fallback": "Very Very Frightening"
+    },
+    "description": {
+      "translate": "bo.adv.adventure.very_very_frightening.description",
+      "fallback": "Strike a Villager with lightning"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "struck_villager": {
+      "conditions": {
+        "victims": [
+          {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:villager"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:channeled_lightning"
+    }
+  },
+  "requirements": [
+    [
+      "struck_villager"
+    ]
+  ]
+}

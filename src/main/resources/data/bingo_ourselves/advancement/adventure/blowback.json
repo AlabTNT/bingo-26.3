@@ -1,0 +1,50 @@
+{
+  "parent": "bingo_ourselves:adventure/minecraft_trials_edition",
+  "display": {
+    "icon": {
+      "id": "minecraft:wind_charge"
+    },
+    "title": {
+      "translate": "bo.adv.adventure.blowback.title",
+      "fallback": "Blowback"
+    },
+    "description": {
+      "translate": "bo.adv.adventure.blowback.description",
+      "fallback": "Kill a Breeze with a deflected Breeze-shot Wind Charge"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "blowback": {
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:breeze"
+          }
+        },
+        "killing_blow": {
+          "direct_entity": {
+            "minecraft:entity_type": "minecraft:breeze_wind_charge"
+          },
+          "tags": [
+            {
+              "expected": true,
+              "id": "#minecraft:is_projectile"
+            }
+          ]
+        }
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "requirements": [
+    [
+      "blowback"
+    ]
+  ]
+}

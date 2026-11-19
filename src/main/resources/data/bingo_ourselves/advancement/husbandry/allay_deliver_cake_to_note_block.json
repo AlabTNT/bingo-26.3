@@ -1,0 +1,51 @@
+{
+  "parent": "bingo_ourselves:husbandry/allay_deliver_item_to_player",
+  "display": {
+    "icon": {
+      "id": "minecraft:note_block"
+    },
+    "title": {
+      "translate": "bo.adv.husbandry.allay_deliver_cake_to_note_block.title",
+      "fallback": "Birthday Song"
+    },
+    "description": {
+      "translate": "bo.adv.husbandry.allay_deliver_cake_to_note_block.description",
+      "fallback": "Have an Allay drop a Cake at a Note Block"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "allay_deliver_cake_to_note_block": {
+      "conditions": {
+        "location": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "blocks": "minecraft:note_block"
+                }
+              }
+            },
+            {
+              "type": "minecraft:match_tool",
+              "predicate": {
+                "items": "minecraft:cake"
+              }
+            }
+          ]
+        }
+      },
+      "trigger": "minecraft:allay_drop_item_on_block"
+    }
+  },
+  "requirements": [
+    [
+      "allay_deliver_cake_to_note_block"
+    ]
+  ]
+}

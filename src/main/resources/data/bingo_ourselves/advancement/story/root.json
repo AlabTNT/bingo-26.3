@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:grass_block"
+    },
+    "title": {
+      "translate": "bo.adv.story.root.title",
+      "fallback": "Bingo: Story"
+    },
+    "description": {
+      "translate": "bo.adv.story.root.description",
+      "fallback": "Complete the story missions to score Bingo tiles."
+    },
+    "background": "minecraft:gui/advancements/backgrounds/stone",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

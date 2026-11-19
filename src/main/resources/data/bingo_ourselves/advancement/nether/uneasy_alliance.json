@@ -1,0 +1,42 @@
+{
+  "parent": "bingo_ourselves:nether/return_to_sender",
+  "display": {
+    "icon": {
+      "id": "minecraft:ghast_tear"
+    },
+    "title": {
+      "translate": "bo.adv.nether.uneasy_alliance.title",
+      "fallback": "Uneasy Alliance"
+    },
+    "description": {
+      "translate": "bo.adv.nether.uneasy_alliance.description",
+      "fallback": "Rescue a Ghast from the Nether, bring it safely home to the Overworld... and then kill it"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "killed_ghast": {
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:ghast",
+            "minecraft:location": {
+              "dimension": "minecraft:overworld"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "requirements": [
+    [
+      "killed_ghast"
+    ]
+  ]
+}

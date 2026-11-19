@@ -1,0 +1,37 @@
+{
+  "parent": "bingo_ourselves:end/find_end_city",
+  "display": {
+    "icon": {
+      "id": "minecraft:elytra"
+    },
+    "title": {
+      "translate": "bo.adv.end.elytra.title",
+      "fallback": "Sky's the Limit"
+    },
+    "description": {
+      "translate": "bo.adv.end.elytra.description",
+      "fallback": "Find Elytra"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "elytra": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:elytra"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "elytra"
+    ]
+  ]
+}

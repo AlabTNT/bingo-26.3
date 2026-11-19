@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:red_nether_bricks"
+    },
+    "title": {
+      "translate": "bo.adv.nether.root.title",
+      "fallback": "Bingo: Nether"
+    },
+    "description": {
+      "translate": "bo.adv.nether.root.description",
+      "fallback": "Complete the nether missions to score Bingo tiles."
+    },
+    "background": "minecraft:gui/advancements/backgrounds/nether",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

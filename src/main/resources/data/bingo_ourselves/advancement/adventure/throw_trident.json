@@ -1,0 +1,45 @@
+{
+  "parent": "bingo_ourselves:adventure/kill_a_mob",
+  "display": {
+    "icon": {
+      "id": "minecraft:trident"
+    },
+    "title": {
+      "translate": "bo.adv.adventure.throw_trident.title",
+      "fallback": "A Throwaway Joke"
+    },
+    "description": {
+      "translate": "bo.adv.adventure.throw_trident.description",
+      "fallback": "Throw a Trident at something.\nNote: Throwing away your only weapon is not a good idea."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "shot_trident": {
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "minecraft:entity_type": "minecraft:trident"
+            },
+            "tags": [
+              {
+                "expected": true,
+                "id": "#minecraft:is_projectile"
+              }
+            ]
+          }
+        }
+      },
+      "trigger": "minecraft:player_hurt_entity"
+    }
+  },
+  "requirements": [
+    [
+      "shot_trident"
+    ]
+  ]
+}

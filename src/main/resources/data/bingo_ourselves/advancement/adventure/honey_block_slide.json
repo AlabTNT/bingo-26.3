@@ -1,0 +1,33 @@
+{
+  "parent": "bingo_ourselves:adventure/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:honey_block"
+    },
+    "title": {
+      "translate": "bo.adv.adventure.honey_block_slide.title",
+      "fallback": "Sticky Situation"
+    },
+    "description": {
+      "translate": "bo.adv.adventure.honey_block_slide.description",
+      "fallback": "Jump into a Honey Block to break your fall"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "honey_block_slide": {
+      "conditions": {
+        "blocks": "minecraft:honey_block"
+      },
+      "trigger": "minecraft:slide_down_block"
+    }
+  },
+  "requirements": [
+    [
+      "honey_block_slide"
+    ]
+  ]
+}

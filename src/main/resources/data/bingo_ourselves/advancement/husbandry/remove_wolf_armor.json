@@ -1,0 +1,42 @@
+{
+  "parent": "bingo_ourselves:husbandry/tame_an_animal",
+  "display": {
+    "icon": {
+      "id": "minecraft:shears"
+    },
+    "title": {
+      "translate": "bo.adv.husbandry.remove_wolf_armor.title",
+      "fallback": "Shear Brilliance"
+    },
+    "description": {
+      "translate": "bo.adv.husbandry.remove_wolf_armor.description",
+      "fallback": "Remove Wolf Armor from a Wolf using Shears"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "remove_wolf_armor": {
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:wolf"
+          }
+        },
+        "item": {
+          "items": "minecraft:wolf_armor"
+        }
+      },
+      "trigger": "minecraft:player_sheared_equipment"
+    }
+  },
+  "requirements": [
+    [
+      "remove_wolf_armor"
+    ]
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "parent": "bingo_ourselves:end/kill_dragon",
+  "display": {
+    "icon": {
+      "id": "minecraft:dragon_egg"
+    },
+    "title": {
+      "translate": "bo.adv.end.dragon_egg.title",
+      "fallback": "The Next Generation"
+    },
+    "description": {
+      "translate": "bo.adv.end.dragon_egg.description",
+      "fallback": "Hold the Dragon Egg"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "dragon_egg": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:dragon_egg"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "dragon_egg"
+    ]
+  ]
+}

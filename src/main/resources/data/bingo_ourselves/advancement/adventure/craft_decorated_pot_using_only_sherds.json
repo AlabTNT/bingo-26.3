@@ -1,0 +1,57 @@
+{
+  "parent": "bingo_ourselves:adventure/salvage_sherd",
+  "display": {
+    "icon": {
+      "components": {
+        "minecraft:pot_decorations": {
+          "front": {
+            "id": "minecraft:explorer_pottery_sherd"
+          },
+          "left": {
+            "id": "minecraft:heart_pottery_sherd"
+          }
+        }
+      },
+      "id": "minecraft:decorated_pot"
+    },
+    "title": {
+      "translate": "bo.adv.adventure.craft_decorated_pot_using_only_sherds.title",
+      "fallback": "Careful Restoration"
+    },
+    "description": {
+      "translate": "bo.adv.adventure.craft_decorated_pot_using_only_sherds.description",
+      "fallback": "Make a Decorated Pot out of 4 Pottery Sherds"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "pot_crafted_using_only_sherds": {
+      "conditions": {
+        "ingredients": [
+          {
+            "items": "#minecraft:decorated_pot_sherds"
+          },
+          {
+            "items": "#minecraft:decorated_pot_sherds"
+          },
+          {
+            "items": "#minecraft:decorated_pot_sherds"
+          },
+          {
+            "items": "#minecraft:decorated_pot_sherds"
+          }
+        ],
+        "recipes": "minecraft:decorated_pot"
+      },
+      "trigger": "minecraft:recipe_crafted"
+    }
+  },
+  "requirements": [
+    [
+      "pot_crafted_using_only_sherds"
+    ]
+  ]
+}

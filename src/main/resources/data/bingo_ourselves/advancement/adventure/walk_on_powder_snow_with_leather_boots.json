@@ -1,0 +1,48 @@
+{
+  "parent": "bingo_ourselves:adventure/sleep_in_bed",
+  "display": {
+    "icon": {
+      "id": "minecraft:leather_boots"
+    },
+    "title": {
+      "translate": "bo.adv.adventure.walk_on_powder_snow_with_leather_boots.title",
+      "fallback": "Light as a Rabbit"
+    },
+    "description": {
+      "translate": "bo.adv.adventure.walk_on_powder_snow_with_leather_boots.description",
+      "fallback": "Walk on Powder Snow... without sinking in it"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "walk_on_powder_snow_with_leather_boots": {
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:equipment": {
+              "feet": {
+                "items": "minecraft:leather_boots"
+              }
+            },
+            "minecraft:stepping_on": {
+              "block": {
+                "blocks": "minecraft:powder_snow"
+              }
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "requirements": [
+    [
+      "walk_on_powder_snow_with_leather_boots"
+    ]
+  ]
+}

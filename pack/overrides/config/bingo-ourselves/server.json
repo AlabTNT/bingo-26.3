@@ -1,0 +1,69 @@
+{
+  "configVersion": 1,
+  "preset": "mixed",
+  "lobby": {
+    "minPlayers": 2,
+    "teamCount": 4,
+    "countdownSeconds": 10,
+    "postgameSeconds": 15,
+    "autoStartSeconds": 0,
+    "x": 0.5,
+    "y": 101.0,
+    "z": 0.5,
+    "buildPlatform": true,
+    "giveLobbyItems": true
+  },
+  "board": {
+    "size": 5,
+    "boards": 1,
+    "pool": "mixed",
+    "difficulty": "easy",
+    "distribution": [],
+    "goal": "lines",
+    "goalValue": 1,
+    "lockout": false,
+    "fog": false,
+    "fogInitialRevealed": 1,
+    "hiddenItems": false,
+    "consumeItems": false,
+    "boardDifficulties": []
+  },
+  "game": {
+    "timeLimitMinutes": 30,
+    "keepInventory": true,
+    "pvp": false,
+    "elytra": false,
+    "infiniteFireworks": false,
+    "nightVision": false,
+    "playerKit": false,
+    "teamKit": false,
+    "spawnDistanceChunks": 128,
+    "spawnDimension": "minecraft:overworld",
+    "allowSpectators": true,
+    "giveMementos": true
+  },
+  "world": {
+    "randomMap": true,
+    "borderDiameter": 4096,
+    "weather": "cycle",
+    "daylight": "cycle",
+    "lockTime": false,
+    "randomEvents": true,
+    "eventIntervalSeconds": 180,
+    "supplyDrops": true,
+    "supplyDropIntervalSeconds": 300
+  },
+  "extras": {
+    "teamChest": true,
+    "hunterMode": false,
+    "hunterTeam": "",
+    "runnerLives": 3,
+    "huntersTrackRunners": true,
+    "huntersGlow": true,
+    "sharedTeamChat": true
+  },
+  "advancements": {
+    "replaceVanilla": true,
+    "resetOnRoundStart": true
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "parent": "bingo_ourselves:adventure/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:crafter"
+    },
+    "title": {
+      "translate": "bo.adv.adventure.crafters_crafting_crafters.title",
+      "fallback": "Crafters Crafting Crafters"
+    },
+    "description": {
+      "translate": "bo.adv.adventure.crafters_crafting_crafters.description",
+      "fallback": "Be near a Crafter when it crafts a Crafter"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "crafter_crafted_crafter": {
+      "conditions": {
+        "recipes": "minecraft:crafter"
+      },
+      "trigger": "minecraft:crafter_recipe_crafted"
+    }
+  },
+  "requirements": [
+    [
+      "crafter_crafted_crafter"
+    ]
+  ]
+}

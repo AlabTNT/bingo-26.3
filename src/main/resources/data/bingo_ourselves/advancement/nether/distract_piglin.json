@@ -1,0 +1,168 @@
+{
+  "parent": "bingo_ourselves:nether/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:gold_ingot"
+    },
+    "title": {
+      "translate": "bo.adv.nether.distract_piglin.title",
+      "fallback": "Oh Shiny"
+    },
+    "description": {
+      "translate": "bo.adv.nether.distract_piglin.description",
+      "fallback": "Distract Piglins with gold"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "distract_piglin": {
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:piglin",
+            "minecraft:flags": {
+              "is_baby": false
+            }
+          }
+        },
+        "item": {
+          "items": "#minecraft:piglin_loved"
+        },
+        "player": {
+          "type": "minecraft:inverted",
+          "term": {
+            "type": "minecraft:any_of",
+            "terms": [
+              {
+                "type": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "minecraft:equipment": {
+                    "head": {
+                      "items": "#minecraft:piglin_safe_armor"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "minecraft:equipment": {
+                    "chest": {
+                      "items": "#minecraft:piglin_safe_armor"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "minecraft:equipment": {
+                    "legs": {
+                      "items": "#minecraft:piglin_safe_armor"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "minecraft:equipment": {
+                    "feet": {
+                      "items": "#minecraft:piglin_safe_armor"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "trigger": "minecraft:thrown_item_picked_up_by_entity"
+    },
+    "distract_piglin_directly": {
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:piglin",
+            "minecraft:flags": {
+              "is_baby": false
+            }
+          }
+        },
+        "item": {
+          "items": "minecraft:gold_ingot"
+        },
+        "player": {
+          "type": "minecraft:inverted",
+          "term": {
+            "type": "minecraft:any_of",
+            "terms": [
+              {
+                "type": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "minecraft:equipment": {
+                    "head": {
+                      "items": "#minecraft:piglin_safe_armor"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "minecraft:equipment": {
+                    "chest": {
+                      "items": "#minecraft:piglin_safe_armor"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "minecraft:equipment": {
+                    "legs": {
+                      "items": "#minecraft:piglin_safe_armor"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "minecraft:equipment": {
+                    "feet": {
+                      "items": "#minecraft:piglin_safe_armor"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "trigger": "minecraft:player_interacted_with_entity"
+    }
+  },
+  "requirements": [
+    [
+      "distract_piglin",
+      "distract_piglin_directly"
+    ]
+  ]
+}

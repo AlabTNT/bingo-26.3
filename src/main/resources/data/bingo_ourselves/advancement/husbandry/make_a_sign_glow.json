@@ -1,0 +1,51 @@
+{
+  "parent": "bingo_ourselves:husbandry/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:glow_ink_sac"
+    },
+    "title": {
+      "translate": "bo.adv.husbandry.make_a_sign_glow.title",
+      "fallback": "Glow and Behold!"
+    },
+    "description": {
+      "translate": "bo.adv.husbandry.make_a_sign_glow.description",
+      "fallback": "Make the text of any kind of sign glow"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "make_a_sign_glow": {
+      "conditions": {
+        "location": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "blocks": "#minecraft:all_signs"
+                }
+              }
+            },
+            {
+              "type": "minecraft:match_tool",
+              "predicate": {
+                "items": "minecraft:glow_ink_sac"
+              }
+            }
+          ]
+        }
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "requirements": [
+    [
+      "make_a_sign_glow"
+    ]
+  ]
+}

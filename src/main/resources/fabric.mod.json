@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "bingo_ourselves",
+  "version": "${version}",
+  "name": "Bingo! 26.3",
+  "description": "A self-contained Bingo engine for Minecraft 26.3: lobby, random worlds, configurable boards, teams, missions, 128-stack items, HUD and much more.",
+  "authors": ["alabtnt"],
+  "contact": {
+    "homepage": "https://alabtnt.cn"
+  },
+  "license": "MIT",
+  "icon": "assets/bingo_ourselves/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.alabtnt.bingo.BingoOurselves"],
+    "client": ["com.alabtnt.bingo.client.BingoOurselvesClient"],
+    "modmenu": ["com.alabtnt.bingo.client.integration.ModMenuIntegration"]
+  },
+  "mixins": [
+    "bingo_ourselves.mixins.json",
+    { "config": "bingo_ourselves.client.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "~${minecraft_version}",
+    "java": ">=25",
+    "fabric-api": ">=0.166.2+26.3"
+  },
+  "recommends": {
+    "yet_another_config_lib_v3": ">=3.9.7",
+    "modmenu": ">=21.0.1",
+    "jei": ">=31.17.0",
+    "replaymod": ">=2.6.28"
+  }
+}

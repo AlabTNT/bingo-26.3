@@ -1,0 +1,30 @@
+{
+  "parent": "bingo_ourselves:adventure/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:emerald"
+    },
+    "title": {
+      "translate": "bo.adv.adventure.trade.title",
+      "fallback": "What a Deal!"
+    },
+    "description": {
+      "translate": "bo.adv.adventure.trade.description",
+      "fallback": "Successfully trade with a Villager"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "traded": {
+      "trigger": "minecraft:villager_trade"
+    }
+  },
+  "requirements": [
+    [
+      "traded"
+    ]
+  ]
+}

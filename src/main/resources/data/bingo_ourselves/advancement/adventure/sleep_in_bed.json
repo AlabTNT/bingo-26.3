@@ -1,0 +1,30 @@
+{
+  "parent": "bingo_ourselves:adventure/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:red_bed"
+    },
+    "title": {
+      "translate": "bo.adv.adventure.sleep_in_bed.title",
+      "fallback": "Sweet Dreams"
+    },
+    "description": {
+      "translate": "bo.adv.adventure.sleep_in_bed.description",
+      "fallback": "Sleep in a Bed to change your respawn point"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "slept_in_bed": {
+      "trigger": "minecraft:slept_in_bed"
+    }
+  },
+  "requirements": [
+    [
+      "slept_in_bed"
+    ]
+  ]
+}

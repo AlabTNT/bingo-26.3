@@ -1,0 +1,177 @@
+{
+  "parent": "bingo_ourselves:husbandry/tame_an_animal",
+  "display": {
+    "icon": {
+      "id": "minecraft:bone"
+    },
+    "title": {
+      "translate": "bo.adv.husbandry.whole_pack.title",
+      "fallback": "The Whole Pack"
+    },
+    "description": {
+      "translate": "bo.adv.husbandry.whole_pack.description",
+      "fallback": "Tame one of each Wolf variant"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "minecraft:ashen": {
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:components": {
+              "minecraft:wolf/variant": "minecraft:ashen"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:tame_animal"
+    },
+    "minecraft:black": {
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:components": {
+              "minecraft:wolf/variant": "minecraft:black"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:tame_animal"
+    },
+    "minecraft:chestnut": {
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:components": {
+              "minecraft:wolf/variant": "minecraft:chestnut"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:tame_animal"
+    },
+    "minecraft:pale": {
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:components": {
+              "minecraft:wolf/variant": "minecraft:pale"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:tame_animal"
+    },
+    "minecraft:rusty": {
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:components": {
+              "minecraft:wolf/variant": "minecraft:rusty"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:tame_animal"
+    },
+    "minecraft:snowy": {
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:components": {
+              "minecraft:wolf/variant": "minecraft:snowy"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:tame_animal"
+    },
+    "minecraft:spotted": {
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:components": {
+              "minecraft:wolf/variant": "minecraft:spotted"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:tame_animal"
+    },
+    "minecraft:striped": {
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:components": {
+              "minecraft:wolf/variant": "minecraft:striped"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:tame_animal"
+    },
+    "minecraft:woods": {
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:components": {
+              "minecraft:wolf/variant": "minecraft:woods"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:tame_animal"
+    }
+  },
+  "requirements": [
+    [
+      "minecraft:ashen"
+    ],
+    [
+      "minecraft:black"
+    ],
+    [
+      "minecraft:chestnut"
+    ],
+    [
+      "minecraft:pale"
+    ],
+    [
+      "minecraft:rusty"
+    ],
+    [
+      "minecraft:snowy"
+    ],
+    [
+      "minecraft:spotted"
+    ],
+    [
+      "minecraft:striped"
+    ],
+    [
+      "minecraft:woods"
+    ]
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "parent": "bingo_ourselves:adventure/spyglass_at_ghast",
+  "display": {
+    "icon": {
+      "id": "minecraft:spyglass"
+    },
+    "title": {
+      "translate": "bo.adv.adventure.spyglass_at_dragon.title",
+      "fallback": "Is It a Plane?"
+    },
+    "description": {
+      "translate": "bo.adv.adventure.spyglass_at_dragon.description",
+      "fallback": "Look at the Ender Dragon through a Spyglass"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "spyglass_at_dragon": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:spyglass"
+        },
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:type_specific/player": {
+              "looking_at": {
+                "minecraft:entity_type": "minecraft:ender_dragon"
+              }
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:using_item"
+    }
+  },
+  "requirements": [
+    [
+      "spyglass_at_dragon"
+    ]
+  ]
+}

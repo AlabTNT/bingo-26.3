@@ -1,0 +1,54 @@
+{
+  "parent": "bingo_ourselves:adventure/minecraft_trials_edition",
+  "display": {
+    "icon": {
+      "id": "minecraft:trial_key"
+    },
+    "title": {
+      "translate": "bo.adv.adventure.under_lock_and_key.title",
+      "fallback": "Under Lock and Key"
+    },
+    "description": {
+      "translate": "bo.adv.adventure.under_lock_and_key.description",
+      "fallback": "Unlock a Vault with a Trial Key"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "under_lock_and_key": {
+      "conditions": {
+        "location": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "blocks": "minecraft:vault",
+                  "state": {
+                    "ominous": "false"
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:match_tool",
+              "predicate": {
+                "items": "minecraft:trial_key"
+              }
+            }
+          ]
+        }
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "requirements": [
+    [
+      "under_lock_and_key"
+    ]
+  ]
+}

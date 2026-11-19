@@ -1,0 +1,39 @@
+{
+  "parent": "bingo_ourselves:husbandry/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:dried_ghast"
+    },
+    "title": {
+      "translate": "bo.adv.husbandry.place_dried_ghast_in_water.title",
+      "fallback": "Stay Hydrated!"
+    },
+    "description": {
+      "translate": "bo.adv.husbandry.place_dried_ghast_in_water.description",
+      "fallback": "Place a Dried Ghast block into water"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "place_dried_ghast_in_water": {
+      "conditions": {
+        "location": {
+          "type": "minecraft:match_block",
+          "blocks": "minecraft:dried_ghast",
+          "state": {
+            "waterlogged": "true"
+          }
+        }
+      },
+      "trigger": "minecraft:placed_block"
+    }
+  },
+  "requirements": [
+    [
+      "place_dried_ghast_in_water"
+    ]
+  ]
+}

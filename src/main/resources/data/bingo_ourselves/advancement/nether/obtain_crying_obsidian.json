@@ -1,0 +1,37 @@
+{
+  "parent": "bingo_ourselves:nether/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:crying_obsidian"
+    },
+    "title": {
+      "translate": "bo.adv.nether.obtain_crying_obsidian.title",
+      "fallback": "Who is Cutting Onions?"
+    },
+    "description": {
+      "translate": "bo.adv.nether.obtain_crying_obsidian.description",
+      "fallback": "Obtain Crying Obsidian"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "crying_obsidian": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:crying_obsidian"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "crying_obsidian"
+    ]
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "parent": "bingo_ourselves:nether/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:fire_charge"
+    },
+    "title": {
+      "translate": "bo.adv.nether.return_to_sender.title",
+      "fallback": "Return to Sender"
+    },
+    "description": {
+      "translate": "bo.adv.nether.return_to_sender.description",
+      "fallback": "Destroy a Ghast with a fireball"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "killed_ghast": {
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:ghast"
+          }
+        },
+        "killing_blow": {
+          "direct_entity": {
+            "minecraft:entity_type": "minecraft:fireball"
+          },
+          "tags": [
+            {
+              "expected": true,
+              "id": "#minecraft:is_projectile"
+            }
+          ]
+        }
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "requirements": [
+    [
+      "killed_ghast"
+    ]
+  ]
+}

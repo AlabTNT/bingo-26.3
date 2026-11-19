@@ -1,0 +1,46 @@
+{
+  "parent": "bingo_ourselves:adventure/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:spyglass"
+    },
+    "title": {
+      "translate": "bo.adv.adventure.spyglass_at_parrot.title",
+      "fallback": "Is It a Bird?"
+    },
+    "description": {
+      "translate": "bo.adv.adventure.spyglass_at_parrot.description",
+      "fallback": "Look at a Parrot through a Spyglass"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "spyglass_at_parrot": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:spyglass"
+        },
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:type_specific/player": {
+              "looking_at": {
+                "minecraft:entity_type": "minecraft:parrot"
+              }
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:using_item"
+    }
+  },
+  "requirements": [
+    [
+      "spyglass_at_parrot"
+    ]
+  ]
+}

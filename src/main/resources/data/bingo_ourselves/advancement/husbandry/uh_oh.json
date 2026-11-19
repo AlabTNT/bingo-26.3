@@ -1,0 +1,64 @@
+{
+  "parent": "bingo_ourselves:husbandry/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:tnt"
+    },
+    "title": {
+      "translate": "bo.adv.husbandry.uh_oh.title",
+      "fallback": "Uh Oh"
+    },
+    "description": {
+      "translate": "bo.adv.husbandry.uh_oh.description",
+      "fallback": "Have a Sulfur Cube absorb a TNT block"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "give_tnt_directly": {
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:sulfur_cube",
+            "minecraft:flags": {
+              "is_baby": false
+            }
+          }
+        },
+        "item": {
+          "items": "#minecraft:sulfur_cube_archetype/explosive"
+        }
+      },
+      "trigger": "minecraft:player_interacted_with_entity"
+    },
+    "pick_up_dropped_tnt": {
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:sulfur_cube",
+            "minecraft:flags": {
+              "is_baby": false
+            }
+          }
+        },
+        "item": {
+          "items": "#minecraft:sulfur_cube_archetype/explosive"
+        }
+      },
+      "trigger": "minecraft:thrown_item_picked_up_by_entity"
+    }
+  },
+  "requirements": [
+    [
+      "pick_up_dropped_tnt",
+      "give_tnt_directly"
+    ]
+  ]
+}

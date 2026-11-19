@@ -1,0 +1,39 @@
+{
+  "parent": "bingo_ourselves:nether/get_wither_skull",
+  "display": {
+    "icon": {
+      "id": "minecraft:nether_star"
+    },
+    "title": {
+      "translate": "bo.adv.nether.summon_wither.title",
+      "fallback": "Withering Heights"
+    },
+    "description": {
+      "translate": "bo.adv.nether.summon_wither.description",
+      "fallback": "Summon the Wither"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "summoned": {
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:wither"
+          }
+        }
+      },
+      "trigger": "minecraft:summoned_entity"
+    }
+  },
+  "requirements": [
+    [
+      "summoned"
+    ]
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "pack": {
+    "description": "Bingo! 26.3 — missions & data",
+    "min_format": 101,
+    "max_format": 200
+  },
+  "filter": {
+    "block": [
+      { "namespace": "minecraft", "path": "advancement/story" },
+      { "namespace": "minecraft", "path": "advancement/nether" },
+      { "namespace": "minecraft", "path": "advancement/end" },
+      { "namespace": "minecraft", "path": "advancement/adventure" },
+      { "namespace": "minecraft", "path": "advancement/husbandry" }
+    ]
+  }
+}

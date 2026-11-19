@@ -1,0 +1,39 @@
+{
+  "parent": "bingo_ourselves:husbandry/axolotl_in_a_bucket",
+  "display": {
+    "icon": {
+      "id": "minecraft:tropical_fish_bucket"
+    },
+    "title": {
+      "translate": "bo.adv.husbandry.kill_axolotl_target.title",
+      "fallback": "The Healing Power of Friendship!"
+    },
+    "description": {
+      "translate": "bo.adv.husbandry.kill_axolotl_target.description",
+      "fallback": "Team up with an Axolotl and win a fight"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "kill_axolotl_target": {
+      "conditions": {
+        "source": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:axolotl"
+          }
+        }
+      },
+      "trigger": "minecraft:effects_changed"
+    }
+  },
+  "requirements": [
+    [
+      "kill_axolotl_target"
+    ]
+  ]
+}

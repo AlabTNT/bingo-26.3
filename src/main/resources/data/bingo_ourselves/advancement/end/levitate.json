@@ -1,0 +1,37 @@
+{
+  "parent": "bingo_ourselves:end/find_end_city",
+  "display": {
+    "icon": {
+      "id": "minecraft:shulker_shell"
+    },
+    "title": {
+      "translate": "bo.adv.end.levitate.title",
+      "fallback": "Great View From Up Here"
+    },
+    "description": {
+      "translate": "bo.adv.end.levitate.description",
+      "fallback": "Levitate up 50 blocks from the attacks of a Shulker"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "levitated": {
+      "conditions": {
+        "distance": {
+          "y": {
+            "min": 50.0
+          }
+        }
+      },
+      "trigger": "minecraft:levitation"
+    }
+  },
+  "requirements": [
+    [
+      "levitated"
+    ]
+  ]
+}

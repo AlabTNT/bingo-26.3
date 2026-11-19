@@ -1,0 +1,53 @@
+{
+  "parent": "bingo_ourselves:adventure/minecraft_trials_edition",
+  "display": {
+    "icon": {
+      "id": "minecraft:mace"
+    },
+    "title": {
+      "translate": "bo.adv.adventure.overoverkill.title",
+      "fallback": "Over-Overkill"
+    },
+    "description": {
+      "translate": "bo.adv.adventure.overoverkill.description",
+      "fallback": "Deal 50 hearts of damage in a single hit using the Mace"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "overoverkill": {
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "minecraft:entity_type": "minecraft:player",
+              "minecraft:equipment": {
+                "mainhand": {
+                  "items": "minecraft:mace"
+                }
+              }
+            },
+            "tags": [
+              {
+                "expected": true,
+                "id": "#minecraft:mace_smash"
+              }
+            ]
+          },
+          "dealt": {
+            "min": 100.0
+          }
+        }
+      },
+      "trigger": "minecraft:player_hurt_entity"
+    }
+  },
+  "requirements": [
+    [
+      "overoverkill"
+    ]
+  ]
+}

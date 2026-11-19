@@ -1,0 +1,37 @@
+{
+  "parent": "bingo_ourselves:husbandry/plant_seed",
+  "display": {
+    "icon": {
+      "id": "minecraft:netherite_hoe"
+    },
+    "title": {
+      "translate": "bo.adv.husbandry.obtain_netherite_hoe.title",
+      "fallback": "Serious Dedication"
+    },
+    "description": {
+      "translate": "bo.adv.husbandry.obtain_netherite_hoe.description",
+      "fallback": "Use a Netherite Ingot to upgrade a Hoe, and then reevaluate your life choices"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "netherite_hoe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:netherite_hoe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "netherite_hoe"
+    ]
+  ]
+}

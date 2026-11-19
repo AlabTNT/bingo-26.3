@@ -1,0 +1,46 @@
+{
+  "parent": "bingo_ourselves:nether/obtain_ancient_debris",
+  "display": {
+    "icon": {
+      "id": "minecraft:netherite_chestplate"
+    },
+    "title": {
+      "translate": "bo.adv.nether.netherite_armor.title",
+      "fallback": "Cover Me in Debris"
+    },
+    "description": {
+      "translate": "bo.adv.nether.netherite_armor.description",
+      "fallback": "Get a full suit of Netherite armor"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "netherite_armor": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:netherite_helmet"
+          },
+          {
+            "items": "minecraft:netherite_chestplate"
+          },
+          {
+            "items": "minecraft:netherite_leggings"
+          },
+          {
+            "items": "minecraft:netherite_boots"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "netherite_armor"
+    ]
+  ]
+}

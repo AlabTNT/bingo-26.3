@@ -1,0 +1,37 @@
+{
+  "parent": "bingo_ourselves:nether/find_fortress",
+  "display": {
+    "icon": {
+      "id": "minecraft:wither_skeleton_skull"
+    },
+    "title": {
+      "translate": "bo.adv.nether.get_wither_skull.title",
+      "fallback": "Spooky Scary Skeleton"
+    },
+    "description": {
+      "translate": "bo.adv.nether.get_wither_skull.description",
+      "fallback": "Obtain a Wither Skeleton's skull"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "wither_skull": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:wither_skeleton_skull"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "wither_skull"
+    ]
+  ]
+}

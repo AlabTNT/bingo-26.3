@@ -1,0 +1,51 @@
+{
+  "parent": "bingo_ourselves:adventure/ol_betsy",
+  "display": {
+    "icon": {
+      "id": "minecraft:crossbow"
+    },
+    "title": {
+      "translate": "bo.adv.adventure.two_birds_one_arrow.title",
+      "fallback": "Two Birds, One Arrow"
+    },
+    "description": {
+      "translate": "bo.adv.adventure.two_birds_one_arrow.description",
+      "fallback": "Kill two Phantoms with a piercing Arrow"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "two_birds": {
+      "conditions": {
+        "fired_from_weapon": {
+          "items": "minecraft:crossbow"
+        },
+        "victims": [
+          {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:phantom"
+            }
+          },
+          {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_type": "minecraft:phantom"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:killed_by_arrow"
+    }
+  },
+  "requirements": [
+    [
+      "two_birds"
+    ]
+  ]
+}

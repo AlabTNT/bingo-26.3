@@ -1,0 +1,45 @@
+{
+  "parent": "bingo_ourselves:adventure/kill_a_mob",
+  "display": {
+    "icon": {
+      "id": "minecraft:bow"
+    },
+    "title": {
+      "translate": "bo.adv.adventure.shoot_arrow.title",
+      "fallback": "Take Aim"
+    },
+    "description": {
+      "translate": "bo.adv.adventure.shoot_arrow.description",
+      "fallback": "Shoot something with an Arrow"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "shot_arrow": {
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "minecraft:entity_type": "#minecraft:arrows"
+            },
+            "tags": [
+              {
+                "expected": true,
+                "id": "#minecraft:is_projectile"
+              }
+            ]
+          }
+        }
+      },
+      "trigger": "minecraft:player_hurt_entity"
+    }
+  },
+  "requirements": [
+    [
+      "shot_arrow"
+    ]
+  ]
+}

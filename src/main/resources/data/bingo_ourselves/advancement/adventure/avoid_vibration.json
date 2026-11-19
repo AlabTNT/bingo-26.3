@@ -1,0 +1,30 @@
+{
+  "parent": "bingo_ourselves:adventure/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:sculk_sensor"
+    },
+    "title": {
+      "translate": "bo.adv.adventure.avoid_vibration.title",
+      "fallback": "Sneak 100"
+    },
+    "description": {
+      "translate": "bo.adv.adventure.avoid_vibration.description",
+      "fallback": "Sneak near a Sculk Sensor or Warden to prevent it from detecting you"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "avoid_vibration": {
+      "trigger": "minecraft:avoid_vibration"
+    }
+  },
+  "requirements": [
+    [
+      "avoid_vibration"
+    ]
+  ]
+}

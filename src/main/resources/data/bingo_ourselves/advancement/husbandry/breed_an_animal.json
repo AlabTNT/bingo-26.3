@@ -1,0 +1,30 @@
+{
+  "parent": "bingo_ourselves:husbandry/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:wheat"
+    },
+    "title": {
+      "translate": "bo.adv.husbandry.breed_an_animal.title",
+      "fallback": "The Parrots and the Bats"
+    },
+    "description": {
+      "translate": "bo.adv.husbandry.breed_an_animal.description",
+      "fallback": "Breed two animals together"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "bred": {
+      "trigger": "minecraft:bred_animals"
+    }
+  },
+  "requirements": [
+    [
+      "bred"
+    ]
+  ]
+}

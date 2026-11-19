@@ -1,0 +1,609 @@
+{
+  "advancements": [
+    {
+      "id": "bingo_ourselves:adventure/adventuring_time",
+      "tier": 0,
+      "icon": "minecraft:diamond_boots"
+    },
+    {
+      "id": "bingo_ourselves:adventure/kill_all_mobs",
+      "tier": 0,
+      "icon": "minecraft:diamond_sword"
+    },
+    {
+      "id": "bingo_ourselves:adventure/trim_with_all_exclusive_armor_patterns",
+      "tier": 0,
+      "icon": "minecraft:silence_armor_trim_smithing_template"
+    },
+    {
+      "id": "bingo_ourselves:husbandry/balanced_diet",
+      "tier": 0,
+      "icon": "minecraft:apple"
+    },
+    {
+      "id": "bingo_ourselves:husbandry/bred_all_animals",
+      "tier": 0,
+      "icon": "minecraft:golden_carrot"
+    },
+    {
+      "id": "bingo_ourselves:husbandry/complete_catalogue",
+      "tier": 0,
+      "icon": "minecraft:cod"
+    },
+    {
+      "id": "bingo_ourselves:husbandry/whole_pack",
+      "tier": 0,
+      "icon": "minecraft:bone"
+    },
+    {
+      "id": "bingo_ourselves:nether/all_effects",
+      "tier": 0,
+      "icon": "minecraft:bucket"
+    },
+    {
+      "id": "bingo_ourselves:nether/all_potions",
+      "tier": 0,
+      "icon": "minecraft:milk_bucket"
+    },
+    {
+      "id": "bingo_ourselves:adventure/arbalistic",
+      "tier": 1,
+      "icon": "minecraft:crossbow"
+    },
+    {
+      "id": "bingo_ourselves:adventure/blowback",
+      "tier": 1,
+      "icon": "minecraft:wind_charge"
+    },
+    {
+      "id": "bingo_ourselves:adventure/heart_transplanter",
+      "tier": 1,
+      "icon": "minecraft:creaking_heart"
+    },
+    {
+      "id": "bingo_ourselves:adventure/hero_of_the_village",
+      "tier": 1,
+      "icon": "minecraft:white_banner"
+    },
+    {
+      "id": "bingo_ourselves:adventure/minecraft_trials_edition",
+      "tier": 1,
+      "icon": "minecraft:chiseled_tuff"
+    },
+    {
+      "id": "bingo_ourselves:adventure/overoverkill",
+      "tier": 1,
+      "icon": "minecraft:mace"
+    },
+    {
+      "id": "bingo_ourselves:adventure/revaulting",
+      "tier": 1,
+      "icon": "minecraft:ominous_trial_key"
+    },
+    {
+      "id": "bingo_ourselves:adventure/spyglass_at_dragon",
+      "tier": 1,
+      "icon": "minecraft:spyglass"
+    },
+    {
+      "id": "bingo_ourselves:adventure/throw_trident",
+      "tier": 1,
+      "icon": "minecraft:trident"
+    },
+    {
+      "id": "bingo_ourselves:adventure/totem_of_undying",
+      "tier": 1,
+      "icon": "minecraft:totem_of_undying"
+    },
+    {
+      "id": "bingo_ourselves:adventure/trade_at_world_height",
+      "tier": 1,
+      "icon": "minecraft:emerald"
+    },
+    {
+      "id": "bingo_ourselves:adventure/two_birds_one_arrow",
+      "tier": 1,
+      "icon": "minecraft:crossbow"
+    },
+    {
+      "id": "bingo_ourselves:adventure/under_lock_and_key",
+      "tier": 1,
+      "icon": "minecraft:trial_key"
+    },
+    {
+      "id": "bingo_ourselves:adventure/very_very_frightening",
+      "tier": 1,
+      "icon": "minecraft:trident"
+    },
+    {
+      "id": "bingo_ourselves:adventure/who_needs_rockets",
+      "tier": 1,
+      "icon": "minecraft:wind_charge"
+    },
+    {
+      "id": "bingo_ourselves:end/dragon_breath",
+      "tier": 1,
+      "icon": "minecraft:dragon_breath"
+    },
+    {
+      "id": "bingo_ourselves:end/dragon_egg",
+      "tier": 1,
+      "icon": "minecraft:dragon_egg"
+    },
+    {
+      "id": "bingo_ourselves:end/elytra",
+      "tier": 1,
+      "icon": "minecraft:elytra"
+    },
+    {
+      "id": "bingo_ourselves:end/enter_end_gateway",
+      "tier": 1,
+      "icon": "minecraft:ender_pearl"
+    },
+    {
+      "id": "bingo_ourselves:end/find_end_city",
+      "tier": 1,
+      "icon": "minecraft:purpur_block"
+    },
+    {
+      "id": "bingo_ourselves:end/kill_dragon",
+      "tier": 1,
+      "icon": "minecraft:dragon_head"
+    },
+    {
+      "id": "bingo_ourselves:end/levitate",
+      "tier": 1,
+      "icon": "minecraft:shulker_shell"
+    },
+    {
+      "id": "bingo_ourselves:end/respawn_dragon",
+      "tier": 1,
+      "icon": "minecraft:end_crystal"
+    },
+    {
+      "id": "bingo_ourselves:husbandry/allay_deliver_cake_to_note_block",
+      "tier": 1,
+      "icon": "minecraft:note_block"
+    },
+    {
+      "id": "bingo_ourselves:husbandry/feed_snifflet",
+      "tier": 1,
+      "icon": "minecraft:torchflower_seeds"
+    },
+    {
+      "id": "bingo_ourselves:husbandry/froglights",
+      "tier": 1,
+      "icon": "minecraft:verdant_froglight"
+    },
+    {
+      "id": "bingo_ourselves:husbandry/kill_axolotl_target",
+      "tier": 1,
+      "icon": "minecraft:tropical_fish_bucket"
+    },
+    {
+      "id": "bingo_ourselves:husbandry/leash_all_frog_variants",
+      "tier": 1,
+      "icon": "minecraft:lead"
+    },
+    {
+      "id": "bingo_ourselves:husbandry/obtain_netherite_hoe",
+      "tier": 1,
+      "icon": "minecraft:netherite_hoe"
+    },
+    {
+      "id": "bingo_ourselves:husbandry/plant_any_sniffer_seed",
+      "tier": 1,
+      "icon": "minecraft:pitcher_pod"
+    },
+    {
+      "id": "bingo_ourselves:husbandry/silk_touch_nest",
+      "tier": 1,
+      "icon": "minecraft:bee_nest"
+    },
+    {
+      "id": "bingo_ourselves:husbandry/tadpole_in_a_bucket",
+      "tier": 1,
+      "icon": "minecraft:tadpole_bucket"
+    },
+    {
+      "id": "bingo_ourselves:nether/create_beacon",
+      "tier": 1,
+      "icon": "minecraft:beacon"
+    },
+    {
+      "id": "bingo_ourselves:nether/create_full_beacon",
+      "tier": 1,
+      "icon": "minecraft:beacon"
+    },
+    {
+      "id": "bingo_ourselves:nether/get_wither_skull",
+      "tier": 1,
+      "icon": "minecraft:wither_skeleton_skull"
+    },
+    {
+      "id": "bingo_ourselves:nether/netherite_armor",
+      "tier": 1,
+      "icon": "minecraft:netherite_chestplate"
+    },
+    {
+      "id": "bingo_ourselves:nether/ride_strider_in_overworld_lava",
+      "tier": 1,
+      "icon": "minecraft:warped_fungus_on_a_stick"
+    },
+    {
+      "id": "bingo_ourselves:nether/summon_wither",
+      "tier": 1,
+      "icon": "minecraft:nether_star"
+    },
+    {
+      "id": "bingo_ourselves:nether/uneasy_alliance",
+      "tier": 1,
+      "icon": "minecraft:ghast_tear"
+    },
+    {
+      "id": "bingo_ourselves:story/cure_zombie_villager",
+      "tier": 1,
+      "icon": "minecraft:golden_apple"
+    },
+    {
+      "id": "bingo_ourselves:story/enter_the_end",
+      "tier": 1,
+      "icon": "minecraft:end_stone"
+    },
+    {
+      "id": "bingo_ourselves:story/follow_ender_eye",
+      "tier": 1,
+      "icon": "minecraft:ender_eye"
+    },
+    {
+      "id": "bingo_ourselves:adventure/avoid_vibration",
+      "tier": 2,
+      "icon": "minecraft:sculk_sensor"
+    },
+    {
+      "id": "bingo_ourselves:adventure/bullseye",
+      "tier": 2,
+      "icon": "minecraft:target"
+    },
+    {
+      "id": "bingo_ourselves:adventure/craft_decorated_pot_using_only_sherds",
+      "tier": 2,
+      "icon": "minecraft:decorated_pot"
+    },
+    {
+      "id": "bingo_ourselves:adventure/fall_from_world_height",
+      "tier": 2,
+      "icon": "minecraft:water_bucket"
+    },
+    {
+      "id": "bingo_ourselves:adventure/honey_block_slide",
+      "tier": 2,
+      "icon": "minecraft:honey_block"
+    },
+    {
+      "id": "bingo_ourselves:adventure/kill_mob_near_sculk_catalyst",
+      "tier": 2,
+      "icon": "minecraft:sculk_catalyst"
+    },
+    {
+      "id": "bingo_ourselves:adventure/lighten_up",
+      "tier": 2,
+      "icon": "minecraft:copper_bulb"
+    },
+    {
+      "id": "bingo_ourselves:adventure/sniper_duel",
+      "tier": 2,
+      "icon": "minecraft:arrow"
+    },
+    {
+      "id": "bingo_ourselves:adventure/spear_many_mobs",
+      "tier": 2,
+      "icon": "minecraft:iron_spear"
+    },
+    {
+      "id": "bingo_ourselves:adventure/spyglass_at_parrot",
+      "tier": 2,
+      "icon": "minecraft:spyglass"
+    },
+    {
+      "id": "bingo_ourselves:adventure/trim_with_any_armor_pattern",
+      "tier": 2,
+      "icon": "minecraft:dune_armor_trim_smithing_template"
+    },
+    {
+      "id": "bingo_ourselves:husbandry/obtain_sniffer_egg",
+      "tier": 2,
+      "icon": "minecraft:sniffer_egg"
+    },
+    {
+      "id": "bingo_ourselves:husbandry/place_dried_ghast_in_water",
+      "tier": 2,
+      "icon": "minecraft:dried_ghast"
+    },
+    {
+      "id": "bingo_ourselves:husbandry/uh_oh",
+      "tier": 2,
+      "icon": "minecraft:tnt"
+    },
+    {
+      "id": "bingo_ourselves:nether/charge_respawn_anchor",
+      "tier": 2,
+      "icon": "minecraft:respawn_anchor"
+    },
+    {
+      "id": "bingo_ourselves:nether/explore_nether",
+      "tier": 2,
+      "icon": "minecraft:netherite_boots"
+    },
+    {
+      "id": "bingo_ourselves:nether/fast_travel",
+      "tier": 2,
+      "icon": "minecraft:map"
+    },
+    {
+      "id": "bingo_ourselves:nether/find_bastion",
+      "tier": 2,
+      "icon": "minecraft:polished_blackstone_bricks"
+    },
+    {
+      "id": "bingo_ourselves:nether/find_fortress",
+      "tier": 2,
+      "icon": "minecraft:nether_bricks"
+    },
+    {
+      "id": "bingo_ourselves:nether/loot_bastion",
+      "tier": 2,
+      "icon": "minecraft:chest"
+    },
+    {
+      "id": "bingo_ourselves:nether/obtain_ancient_debris",
+      "tier": 2,
+      "icon": "minecraft:ancient_debris"
+    },
+    {
+      "id": "bingo_ourselves:nether/obtain_blaze_rod",
+      "tier": 2,
+      "icon": "minecraft:blaze_rod"
+    },
+    {
+      "id": "bingo_ourselves:nether/return_to_sender",
+      "tier": 2,
+      "icon": "minecraft:fire_charge"
+    },
+    {
+      "id": "bingo_ourselves:nether/ride_strider",
+      "tier": 2,
+      "icon": "minecraft:warped_fungus_on_a_stick"
+    },
+    {
+      "id": "bingo_ourselves:story/enchant_item",
+      "tier": 2,
+      "icon": "minecraft:enchanted_book"
+    },
+    {
+      "id": "bingo_ourselves:story/shiny_gear",
+      "tier": 2,
+      "icon": "minecraft:diamond_chestplate"
+    },
+    {
+      "id": "bingo_ourselves:adventure/brush_armadillo",
+      "tier": 3,
+      "icon": "minecraft:armadillo_scute"
+    },
+    {
+      "id": "bingo_ourselves:adventure/crafters_crafting_crafters",
+      "tier": 3,
+      "icon": "minecraft:crafter"
+    },
+    {
+      "id": "bingo_ourselves:adventure/lightning_rod_with_villager_no_fire",
+      "tier": 3,
+      "icon": "minecraft:lightning_rod"
+    },
+    {
+      "id": "bingo_ourselves:adventure/play_jukebox_in_meadows",
+      "tier": 3,
+      "icon": "minecraft:jukebox"
+    },
+    {
+      "id": "bingo_ourselves:adventure/read_power_of_chiseled_bookshelf",
+      "tier": 3,
+      "icon": "minecraft:chiseled_bookshelf"
+    },
+    {
+      "id": "bingo_ourselves:adventure/salvage_sherd",
+      "tier": 3,
+      "icon": "minecraft:brush"
+    },
+    {
+      "id": "bingo_ourselves:adventure/spyglass_at_ghast",
+      "tier": 3,
+      "icon": "minecraft:spyglass"
+    },
+    {
+      "id": "bingo_ourselves:adventure/voluntary_exile",
+      "tier": 3,
+      "icon": "minecraft:white_banner"
+    },
+    {
+      "id": "bingo_ourselves:adventure/walk_on_powder_snow_with_leather_boots",
+      "tier": 3,
+      "icon": "minecraft:leather_boots"
+    },
+    {
+      "id": "bingo_ourselves:adventure/whos_the_pillager_now",
+      "tier": 3,
+      "icon": "minecraft:crossbow"
+    },
+    {
+      "id": "bingo_ourselves:husbandry/allay_deliver_item_to_player",
+      "tier": 3,
+      "icon": "minecraft:cookie"
+    },
+    {
+      "id": "bingo_ourselves:husbandry/axolotl_in_a_bucket",
+      "tier": 3,
+      "icon": "minecraft:axolotl_bucket"
+    },
+    {
+      "id": "bingo_ourselves:husbandry/remove_wolf_armor",
+      "tier": 3,
+      "icon": "minecraft:shears"
+    },
+    {
+      "id": "bingo_ourselves:husbandry/repair_wolf_armor",
+      "tier": 3,
+      "icon": "minecraft:wolf_armor"
+    },
+    {
+      "id": "bingo_ourselves:husbandry/ride_a_boat_with_a_goat",
+      "tier": 3,
+      "icon": "minecraft:oak_boat"
+    },
+    {
+      "id": "bingo_ourselves:husbandry/safely_harvest_honey",
+      "tier": 3,
+      "icon": "minecraft:honey_bottle"
+    },
+    {
+      "id": "bingo_ourselves:husbandry/wax_off",
+      "tier": 3,
+      "icon": "minecraft:stone_axe"
+    },
+    {
+      "id": "bingo_ourselves:husbandry/wax_on",
+      "tier": 3,
+      "icon": "minecraft:honeycomb"
+    },
+    {
+      "id": "bingo_ourselves:nether/brew_potion",
+      "tier": 3,
+      "icon": "minecraft:potion"
+    },
+    {
+      "id": "bingo_ourselves:nether/distract_piglin",
+      "tier": 3,
+      "icon": "minecraft:gold_ingot"
+    },
+    {
+      "id": "bingo_ourselves:nether/obtain_crying_obsidian",
+      "tier": 3,
+      "icon": "minecraft:crying_obsidian"
+    },
+    {
+      "id": "bingo_ourselves:story/enter_the_nether",
+      "tier": 3,
+      "icon": "minecraft:flint_and_steel"
+    },
+    {
+      "id": "bingo_ourselves:story/form_obsidian",
+      "tier": 3,
+      "icon": "minecraft:obsidian"
+    },
+    {
+      "id": "bingo_ourselves:story/mine_diamond",
+      "tier": 3,
+      "icon": "minecraft:diamond"
+    },
+    {
+      "id": "bingo_ourselves:adventure/kill_a_mob",
+      "tier": 4,
+      "icon": "minecraft:iron_sword"
+    },
+    {
+      "id": "bingo_ourselves:adventure/ol_betsy",
+      "tier": 4,
+      "icon": "minecraft:crossbow"
+    },
+    {
+      "id": "bingo_ourselves:adventure/shoot_arrow",
+      "tier": 4,
+      "icon": "minecraft:bow"
+    },
+    {
+      "id": "bingo_ourselves:adventure/sleep_in_bed",
+      "tier": 4,
+      "icon": "minecraft:red_bed"
+    },
+    {
+      "id": "bingo_ourselves:adventure/summon_iron_golem",
+      "tier": 4,
+      "icon": "minecraft:carved_pumpkin"
+    },
+    {
+      "id": "bingo_ourselves:adventure/trade",
+      "tier": 4,
+      "icon": "minecraft:emerald"
+    },
+    {
+      "id": "bingo_ourselves:adventure/use_lodestone",
+      "tier": 4,
+      "icon": "minecraft:lodestone"
+    },
+    {
+      "id": "bingo_ourselves:husbandry/breed_an_animal",
+      "tier": 4,
+      "icon": "minecraft:wheat"
+    },
+    {
+      "id": "bingo_ourselves:husbandry/fishy_business",
+      "tier": 4,
+      "icon": "minecraft:fishing_rod"
+    },
+    {
+      "id": "bingo_ourselves:husbandry/make_a_sign_glow",
+      "tier": 4,
+      "icon": "minecraft:glow_ink_sac"
+    },
+    {
+      "id": "bingo_ourselves:husbandry/plant_seed",
+      "tier": 4,
+      "icon": "minecraft:wheat"
+    },
+    {
+      "id": "bingo_ourselves:husbandry/tactical_fishing",
+      "tier": 4,
+      "icon": "minecraft:pufferfish_bucket"
+    },
+    {
+      "id": "bingo_ourselves:husbandry/tame_an_animal",
+      "tier": 4,
+      "icon": "minecraft:lead"
+    },
+    {
+      "id": "bingo_ourselves:story/deflect_arrow",
+      "tier": 4,
+      "icon": "minecraft:shield"
+    },
+    {
+      "id": "bingo_ourselves:story/iron_tools",
+      "tier": 4,
+      "icon": "minecraft:iron_pickaxe"
+    },
+    {
+      "id": "bingo_ourselves:story/lava_bucket",
+      "tier": 4,
+      "icon": "minecraft:lava_bucket"
+    },
+    {
+      "id": "bingo_ourselves:story/mine_stone",
+      "tier": 4,
+      "icon": "minecraft:wooden_pickaxe"
+    },
+    {
+      "id": "bingo_ourselves:story/obtain_armor",
+      "tier": 4,
+      "icon": "minecraft:iron_chestplate"
+    },
+    {
+      "id": "bingo_ourselves:story/smelt_iron",
+      "tier": 4,
+      "icon": "minecraft:iron_ingot"
+    },
+    {
+      "id": "bingo_ourselves:story/upgrade_tools",
+      "tier": 4,
+      "icon": "minecraft:stone_pickaxe"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "parent": "bingo_ourselves:nether/obtain_crying_obsidian",
+  "display": {
+    "icon": {
+      "id": "minecraft:respawn_anchor"
+    },
+    "title": {
+      "translate": "bo.adv.nether.charge_respawn_anchor.title",
+      "fallback": "Not Quite \"Nine\" Lives"
+    },
+    "description": {
+      "translate": "bo.adv.nether.charge_respawn_anchor.description",
+      "fallback": "Charge a Respawn Anchor to the maximum"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "charge_respawn_anchor": {
+      "conditions": {
+        "location": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "blocks": "minecraft:respawn_anchor",
+                  "state": {
+                    "charges": "4"
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:match_tool",
+              "predicate": {
+                "items": "minecraft:glowstone"
+              }
+            }
+          ]
+        }
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "requirements": [
+    [
+      "charge_respawn_anchor"
+    ]
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "parent": "bingo_ourselves:nether/obtain_blaze_rod",
+  "display": {
+    "icon": {
+      "id": "minecraft:potion"
+    },
+    "title": {
+      "translate": "bo.adv.nether.brew_potion.title",
+      "fallback": "Local Brewery"
+    },
+    "description": {
+      "translate": "bo.adv.nether.brew_potion.description",
+      "fallback": "Brew a Potion"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "potion": {
+      "trigger": "minecraft:brewed_potion"
+    }
+  },
+  "requirements": [
+    [
+      "potion"
+    ]
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "parent": "bingo_ourselves:husbandry/tame_an_animal",
+  "display": {
+    "icon": {
+      "id": "minecraft:wolf_armor"
+    },
+    "title": {
+      "translate": "bo.adv.husbandry.repair_wolf_armor.title",
+      "fallback": "Good as New"
+    },
+    "description": {
+      "translate": "bo.adv.husbandry.repair_wolf_armor.description",
+      "fallback": "Fully repair damaged Wolf Armor using Armadillo Scutes"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "repair_wolf_armor": {
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:wolf",
+            "minecraft:equipment": {
+              "body": {
+                "components": {
+                  "minecraft:damage": 0
+                },
+                "items": "minecraft:wolf_armor"
+              }
+            }
+          }
+        },
+        "item": {
+          "items": "minecraft:armadillo_scute"
+        }
+      },
+      "trigger": "minecraft:player_interacted_with_entity"
+    }
+  },
+  "requirements": [
+    [
+      "repair_wolf_armor"
+    ]
+  ]
+}

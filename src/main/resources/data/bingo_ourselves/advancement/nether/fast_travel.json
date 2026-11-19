@@ -1,0 +1,37 @@
+{
+  "parent": "bingo_ourselves:nether/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:map"
+    },
+    "title": {
+      "translate": "bo.adv.nether.fast_travel.title",
+      "fallback": "Subspace Bubble"
+    },
+    "description": {
+      "translate": "bo.adv.nether.fast_travel.description",
+      "fallback": "Use the Nether to travel 7 km in the Overworld"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "travelled": {
+      "conditions": {
+        "distance": {
+          "horizontal": {
+            "min": 7000.0
+          }
+        }
+      },
+      "trigger": "minecraft:nether_travel"
+    }
+  },
+  "requirements": [
+    [
+      "travelled"
+    ]
+  ]
+}

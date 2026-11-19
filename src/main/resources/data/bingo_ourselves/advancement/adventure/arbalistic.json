@@ -1,0 +1,36 @@
+{
+  "parent": "bingo_ourselves:adventure/ol_betsy",
+  "display": {
+    "icon": {
+      "id": "minecraft:crossbow"
+    },
+    "title": {
+      "translate": "bo.adv.adventure.arbalistic.title",
+      "fallback": "Arbalistic"
+    },
+    "description": {
+      "translate": "bo.adv.adventure.arbalistic.description",
+      "fallback": "Kill five unique mobs with one crossbow shot"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "arbalistic": {
+      "conditions": {
+        "fired_from_weapon": {
+          "items": "minecraft:crossbow"
+        },
+        "unique_entity_types": 5
+      },
+      "trigger": "minecraft:killed_by_arrow"
+    }
+  },
+  "requirements": [
+    [
+      "arbalistic"
+    ]
+  ]
+}

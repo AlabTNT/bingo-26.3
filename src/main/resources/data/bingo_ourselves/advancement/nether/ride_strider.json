@@ -1,0 +1,44 @@
+{
+  "parent": "bingo_ourselves:nether/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:warped_fungus_on_a_stick"
+    },
+    "title": {
+      "translate": "bo.adv.nether.ride_strider.title",
+      "fallback": "This Boat Has Legs"
+    },
+    "description": {
+      "translate": "bo.adv.nether.ride_strider.description",
+      "fallback": "Ride a Strider with a Warped Fungus on a Stick"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "used_warped_fungus_on_a_stick": {
+      "conditions": {
+        "item": {
+          "items": "minecraft:warped_fungus_on_a_stick"
+        },
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:vehicle": {
+              "minecraft:entity_type": "minecraft:strider"
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:item_durability_changed"
+    }
+  },
+  "requirements": [
+    [
+      "used_warped_fungus_on_a_stick"
+    ]
+  ]
+}

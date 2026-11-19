@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:map"
+    },
+    "title": {
+      "translate": "bo.adv.adventure.root.title",
+      "fallback": "Bingo: Adventure"
+    },
+    "description": {
+      "translate": "bo.adv.adventure.root.description",
+      "fallback": "Complete the adventure missions to score Bingo tiles."
+    },
+    "background": "minecraft:gui/advancements/backgrounds/adventure",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
